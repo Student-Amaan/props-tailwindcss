@@ -1,10 +1,10 @@
 import React from "react";
 
-function Card({aman}) {
+function Card({aman, textme = "visit me"}) {
     console.log(aman)
   return (
     <div>
-      <div class="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl border-2">
+      <div class="flex flex-col items-center gap-6 p-7 md:flex-row md:gap-8 rounded-2xl border-2 m-5">
         <div>
           <img
             class="size-48 shadow-xl rounded-md"
@@ -21,6 +21,7 @@ function Card({aman}) {
             <span>2025</span>
           </span>
         </div>
+        <button className="bg-blue-500 text-white rounded p-4 ">{textme}</button>
       </div>
     </div>
   );
